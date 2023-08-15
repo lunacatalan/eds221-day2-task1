@@ -139,3 +139,45 @@ fish_size[2,2]
 
 fish_size[,2] # returns all values in second column
 ```
+
+## Lists
+
+Working in a new branch.
+
+```{r}
+# maintain data structures and classes
+urchins <- list("blue", 
+                c(1, 2, 3), 
+                c("fi", "fy", "fo"), 
+                5L)
+
+urchins_named <- list(clor = "blue", 
+                meals = c(1, 2, 3), 
+                songs = c("fi", "fy", "fo"), 
+               price = 5L)
+```
+
+```{r}
+# access the second element in urchins
+  # returns the list view of the element
+urchins_lsit <- urchins[2]
+
+# double brackets returns a numeric vector
+urchins_vector <- urchins[[2]]
+
+# call element named meal from list
+urchins_named$meals
+```
+
+### T-test
+
+This p-value is saying that there is a 5.8% chance that two random samples would be found to have at least as different means as the samples collected.
+
+```{r}
+sample_1 <- c(1, 2, 3, 4, 5, 6, 6, 3)
+sample_2 <- c(10, 30, 40, 5, 6, 10, 3, 5, 6, 8)
+
+ttest_example <- t.test(sample_1, sample_2)
+```
+
+Mean size for trees in site A is greater than the mean size in Site B (...statistical summary, `r ttest_example$p.value`.
