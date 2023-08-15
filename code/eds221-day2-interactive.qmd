@@ -114,7 +114,7 @@ trees
 
 Use git branch to check what branch you're working in.
 
-### Matrix Indexing 
+### Matrix Indexing
 
 ```{r}
 fish_size <- matrix(c(1.3, 2.4, 3.5, 5.4), 
