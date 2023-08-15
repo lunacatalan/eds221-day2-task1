@@ -8,6 +8,7 @@ execute:
 
 ```{r}
 library(tidyverse)
+library(here)
 ```
 
 ## Making and Indexing data in R
@@ -208,5 +209,3 @@ purrr::pluck(starwars,
              1, # choosing row of interest
              2) # element
 ```
-
-Changes!
